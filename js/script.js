@@ -9,7 +9,6 @@ surnameList.push(surnameUser.charAt(0).toUpperCase() + surnameUser.substring(1).
 
 //ordino la lista dei cognomi alfabeticamente
 surnameList.sort()
-console.log(surnameList)
 
 //dichiaro variabile per lista li
 var outputList = document.getElementById('lista-cognomi');
@@ -20,3 +19,5 @@ for(var i = 0; i < surnameList.length; i++) {
   StatoPrecedente = outputList.innerHTML;
   outputList.innerHTML = StatoPrecedente + '<li>' + surnameList[i] + '</li>';
 }
+
+console.log(surnameList.indexOf(surnameUser));
