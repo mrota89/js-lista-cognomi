@@ -20,4 +20,11 @@ for(var i = 0; i < surnameList.length; i++) {
   outputList.innerHTML = StatoPrecedente + '<li>' + surnameList[i] + '</li>';
 }
 
-console.log(surnameList.indexOf(surnameUser));
+//ridefinisco la variabile surnameUser
+surnameUser = surnameUser.charAt(0).toUpperCase() + surnameUser.substring(1).toLowerCase();
+
+//cerco indice surnameUser
+var posizioneUser = surnameList.indexOf(surnameUser) + 1;
+
+//stampo indice surnameUser
+outputList.innerHTML = StatoPrecedente + 'La posizione dell\'utente è ' + posizioneUser;
